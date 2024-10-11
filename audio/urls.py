@@ -1,7 +1,9 @@
-from django.urls import path
-from . import views
+from django.contrib import admin
+from django.urls import path, include
+from audio import views  # Import views from your 'audio' app
 
 urlpatterns = [
-    path('', views.upload_and_transcribe, name='upload_and_transcribe'),  # Homepage URL for audio upload
-    path('chat/', views.transcription_chat, name='transcription_chat'),  # URL for the transcription chat
+    path('admin/', admin.site.urls),
+    path('chat/', views.transcription_chat, name='transcription_chat'),
+    path('', views.transcription_chat, name='home'),  # Add this line to handle the root URL
 ]
