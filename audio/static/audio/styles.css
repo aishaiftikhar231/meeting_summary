@@ -1,0 +1,25 @@
+.chat-container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+}
+
+.chat-message {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-message strong {
+    color: #007BFF;
+}
+
+.chat-message p {
+    margin: 5px 0;
+}
+
+.chat-message span {
+    font-size: 0.8em;
+    color: gray;
+}

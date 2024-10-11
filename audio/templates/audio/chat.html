@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Transcription Chat</title>
+    <link rel="stylesheet" href="{% static 'audio/styles.css' %}">
+</head>
+<body>
+    <h1>Transcription Chat</h1>
+    <div class="chat-container">
+        {% for transcript in transcripts %}
+            <div class="chat-message">
+                <strong>{{ transcript.speaker_name }}:</strong>
+                <p>{{ transcript.transcript_text }}</p>
+                <span>{{ transcript.timestamp }}</span>
+            </div>
+        {% endfor %}
+    </div>
+</body>
+</html>
