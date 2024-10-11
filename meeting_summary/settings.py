@@ -60,8 +60,8 @@ ROOT_URLCONF = 'meeting_summary.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],  # You can add custom directories here if needed
-        'APP_DIRS': True,  # This should be True to automatically find templates in app directories
+        'DIRS': [],
+        'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.debug',
@@ -72,7 +72,6 @@ TEMPLATES = [
         },
     },
 ]
-
 
 WSGI_APPLICATION = 'meeting_summary.wsgi.application'
 
