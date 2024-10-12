@@ -1,7 +1,0 @@
-<form method="POST" enctype="multipart/form-data">
-    {% csrf_token %}
-    {% load static %}
-    <label for="audio_file">Upload Audio File:</label>
-    <input type="file" name="audio_file" id="audio_file" required>
-    <button type="submit">Transcribe and Download PDF</button>
-</form>
